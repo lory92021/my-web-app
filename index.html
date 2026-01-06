@@ -10,31 +10,35 @@
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <nav class="nav">
+    <header class="navbar">
         <div class="nav-container">
-            <span class="brand">Marco Bellini</span>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi sono</a></li>
-                <li><a href="#services">Servizi</a></li>
-                <li><a href="#method">Metodo</a></li>
-                <li><a href="#contact">Contatti</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="nav-brand">LORENZO ATTARDO</div>
 
-    <header id="home" class="hero fade-in">
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">Chi sono</a>
+                <a href="#services">Servizi</a>
+                <a href="#method">Metodo</a>
+                <a href="#contact">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero fade-in">
         <h1>Analisi di sicurezza orientata al rischio reale</h1>
         <p>
             Penetration testing manuale e assessment tecnici per individuare vulnerabilità
             sfruttabili, comprenderne le cause e definire mitigazioni concrete.
         </p>
         <a href="#contact" class="btn">Richiedi una consulenza</a>
-    </header>
+    </section>
 
     <section id="about" class="section slide-up">
         <h2>Chi sono</h2>
@@ -53,45 +57,92 @@
 
     <section id="services" class="section slide-up">
         <h2>Servizi</h2>
+        <div class="services-grid">
+            <div class="card">
+                <i data-lucide="shield-check" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Penetration Testing</h3>
+                <p>Test manuali su applicazioni web, API, servizi esposti e infrastrutture critiche.</p>
+            </div>
 
-        <div class="card">
-            <h3>Penetration Testing</h3>
-            <p>Test manuali su applicazioni web, API, servizi esposti e infrastrutture.</p>
-        </div>
+            <div class="card">
+                <i data-lucide="search" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Security Assessment</h3>
+                <p>Analisi di configurazioni insicure, esposizione dei servizi e riduzione della superficie di attacco.
+                </p>
+            </div>
 
-        <div class="card">
-            <h3>Security Assessment</h3>
-            <p>Analisi di configurazioni insicure, esposizione dei servizi e superfici di attacco.</p>
-        </div>
+            <div class="card">
+                <i data-lucide="zap" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Post-Exploitation</h3>
+                <p>Valutazione dell’impatto reale e dei percorsi di escalation dopo una compromissione iniziale.</p>
+            </div>
 
-        <div class="card">
-            <h3>Post-Exploitation Analysis</h3>
-            <p>Valutazione dell’impatto reale dopo una compromissione.</p>
+            <div class="card">
+                <i data-lucide="code" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Sviluppo Web App Sicure</h3>
+                <p>Sviluppo di applicazioni web con sicurezza integrata (Security by Design), gestione avanzata di
+                    permessi, autenticazione sicura e protezione dei dati.</p>
+            </div>
+
+            <div class="card">
+                <i data-lucide="bot" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Automazioni & AI</h3>
+                <p>Sviluppo di automazioni intelligenti e integrazione di soluzioni AI per ottimizzare processi, analisi
+                    predittiva e monitoraggio avanzato della sicurezza.</p>
+            </div>
         </div>
     </section>
 
     <section id="method" class="section slide-up">
         <h2>Metodo di lavoro</h2>
-        <ol class="method-list">
-            <li>Raccolta informazioni e contesto</li>
-            <li>Identificazione superficie reale</li>
-            <li>Test manuali mirati</li>
-            <li>Post-exploitation</li>
-            <li>Analisi del rischio</li>
-            <li>Mitigazioni concrete</li>
-        </ol>
+        <div class="method-list">
+            <div class="method-item">
+                <span class="method-number">01</span>
+                <span>Raccolta informazioni e contesto</span>
+            </div>
+            <div class="method-item">
+                <span class="method-number">02</span>
+                <span>Identificazione superficie reale</span>
+            </div>
+            <div class="method-item">
+                <span class="method-number">03</span>
+                <span>Test manuali mirati</span>
+            </div>
+            <div class="method-item">
+                <span class="method-number">04</span>
+                <span>Post-exploitation</span>
+            </div>
+            <div class="method-item">
+                <span class="method-number">05</span>
+                <span>Analisi del rischio</span>
+            </div>
+            <div class="method-item">
+                <span class="method-number">06</span>
+                <span>Mitigazioni concrete</span>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="section slide-up">
         <h2>Contatti</h2>
-        <p>Email: <a href="mailto:consulenza@securitytech.it">consulenza@securitytech.it</a></p>
-        <p>P. IVA: IT 12345678901</p>
+        <p>Pronto a mettere in sicurezza la tua infrastruttura?</p>
+        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+            <p style="display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="mail" size="18"></i>
+                <a href="mailto:lory92021@gmail.com">lory92021@gmail.com</a>
+            </p>
+            <p style="opacity: 0.6; font-size: 0.9rem;">P. IVA: IT 12345678901</p>
+        </div>
     </section>
 
     <footer>
-        © 2024 Marco Bellini – Cybersecurity Consulting
+        <p>© 2026 Lorenzo Attardo – Cybersecurity Consulting</p>
     </footer>
 
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
     <script src="js/animations.js"></script>
 </body>
 
