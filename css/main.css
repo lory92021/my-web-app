@@ -20,6 +20,12 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+@media (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+    }
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-color: var(--bg);
@@ -81,7 +87,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,14 +145,15 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
-    height: 100vh;
+    padding: 2rem;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     box-sizing: border-box;
+    position: relative;
 }
 
 .section h2 {
