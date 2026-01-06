@@ -446,5 +446,66 @@ body {
 
     .section {
         padding: 4rem 1.5rem;
+        min-height: auto;
+        /* Prevent forcing full height if content is overflowing or too short */
+        scroll-snap-align: none;
+        /* Disable snap on mobile to avoid buggy scrolling */
+    }
+
+    /* Mobile Typography & Spacing Uniformity */
+    .hero h1 {
+        font-size: 2.5rem;
+        /* Smaller, more readable title */
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Grid Adjustments for Mobile */
+    .services-grid {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+        gap: 1.5rem;
+    }
+
+    .method-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Card Adjustments */
+    .card,
+    .method-item,
+    .contact-card {
+        padding: 1.5rem;
+        /* Consistent padding */
+    }
+
+    .contact-card h2 {
+        font-size: 2rem;
+    }
+
+    /* About Section Mobile */
+    .about-highlights {
+        gap: 1rem;
+    }
+
+    .highlight-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Disable some hover effects on touch devices to prevent sticky states */
+    .card:hover,
+    .btn:hover {
+        transform: none;
     }
 }
