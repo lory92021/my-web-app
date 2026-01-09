@@ -1,3 +1,6 @@
+// Initialize Lucide icons
+lucide.createIcons();
+
 const observer = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
